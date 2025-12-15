@@ -14,6 +14,6 @@ switch(oper){
   break;
   case 'div':console.log(num1/num2)
   break;
-  default : console.log('Invalid operator')
+  default :console.log('Invalid operator')
   break;
 }

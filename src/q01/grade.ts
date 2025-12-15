@@ -1,18 +1,22 @@
-const inp = Number(process.argv[2])
-if(Number.isNaN(inp)){
+
+const inp = process.argv[2]
+const score = Number(inp)
+if(Number.isNaN(score)){
   console.log('Invalid Input')
-}else if(inp<0 || inp > 100){
+}else if(score<0 || score > 100){
   console.log('Invalid Input')
 }else{
-  if(inp >= 80){
+  if(score >= 80){
     console.log('Grade is A')
-  }else if(inp >=70){
+  }else if(score >=70){
     console.log('Grade is B')
-  }else if(inp >=60){
+  }else if(score >=60){
     console.log('Grade is C')
-  }else if(inp >= 50){
+  }else if(score >= 50){
     console.log('Grade is D')
-  }else if(inp >= 0 && inp < 50){
+}else if(inp === ''){
+  console.log('Invalid Input')
+  }else if(score >= 0 && score < 50){
     console.log('Grade is F')
   }else{
     console.log('Invalid Input')
