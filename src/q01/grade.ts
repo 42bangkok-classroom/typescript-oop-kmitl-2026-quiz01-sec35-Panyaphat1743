@@ -5,14 +5,16 @@ if(Number.isNaN(inp)){
   console.log('Invalid Input')
 }else{
   if(inp >= 80){
-    console.log('A')
+    console.log('Grade is A')
   }else if(inp >=70){
-    console.log('B')
+    console.log('Grade is B')
   }else if(inp >=60){
-    console.log('C')
+    console.log('Grade is C')
   }else if(inp >= 50){
-    console.log('D')
+    console.log('Grade is D')
+  }else if(inp >= 0 && inp < 50){
+    console.log('Grade is F')
   }else{
-    console.log('F')
+    console.log('Invalid Input')
   }
 }
