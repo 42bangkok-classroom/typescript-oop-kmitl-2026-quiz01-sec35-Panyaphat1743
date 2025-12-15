@@ -1,4 +1,3 @@
-
 const inp = process.argv[2]
 const score = Number(inp)
 if(Number.isNaN(score)){
