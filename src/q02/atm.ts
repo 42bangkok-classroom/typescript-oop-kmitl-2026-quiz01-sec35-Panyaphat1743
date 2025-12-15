@@ -1,6 +1,8 @@
-const bal = Number(process.argv[2])
-const amou = Number(process.argv[3])
-if(Number.isNaN(bal) || Number.isNaN(amou)){
+const bals = process.argv[2]
+const amous = process.argv[2]
+const bal = Number(bals)
+const amou = Number(bals)
+if(Number.isNaN(bal) || Number.isNaN(amou)||bals === ''||amous === ''){
   console.log('Invalid Input')
 }
 if(bal < amou){
