@@ -4,6 +4,7 @@ const bal = Number(bals)
 const amou = Number(amous)
 if(Number.isNaN(bal) || Number.isNaN(amou)||bals === ''||amous ===''){
   console.log('Invalid Input')
+  process.exit()
 }
 if(bal < amou){
   console.log('Insufficient balance')
